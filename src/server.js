@@ -1,7 +1,7 @@
-const app = require ("./app")
+const app = require("./app")
 
-const PORTA = 300
+const PORTA = 3000
 
-app.listen(300, () => {
+app.listen(PORTA, () => {
     console.log(`Servidor rodando em http://localhost:${PORTA}`)
 })
