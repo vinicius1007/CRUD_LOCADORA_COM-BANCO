@@ -11,7 +11,7 @@ const FilmeController = {
         const {
             titulo,
             diretorId,
-            gereros
+            generos
         } = req.body
 
         const filme = {
@@ -19,7 +19,7 @@ const FilmeController = {
             diretorId
         }
 
-        const filmeId = await FilmeModel.create (filme, gerenos)
+        const filmeId = await FilmeModel.create (filme, generos)
         
         return res.status(201).json({ id: filmeId})
     }
